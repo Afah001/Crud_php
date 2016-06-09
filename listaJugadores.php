@@ -6,11 +6,6 @@
 </head>
 <body>
 
-	
-
-
-
-
 	<?php //importar la conexion
 		require "conexion.php";  
 
@@ -112,10 +107,9 @@ if(isset($_REQUEST['action'])){
 
 						 
 						//  enlace
-						 echo "<td> <a href=' ?action=eliminar&id=14 '    > Eliminar </a> </td>";
+						 echo "<td> <a href='?action=eliminar&id=".$fila[0]."'> Eliminar </a> </td>";
 
-
-						//boton
+						
 
 
 
