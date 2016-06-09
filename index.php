@@ -20,11 +20,17 @@
 
 	</form>
 
+
 	<p>haz click <a href="listaJugadores.php" target="blank">aqui </a>para ver la lista de Jugadores</p>
 
 
 
 	<?php 
+
+
+	if(isset($_POST['_nom']) && isset($_POST['_apell']) && isset($_POST['_eda']) 
+		 && isset($_POST['_pos']) && isset($_POST['_val']) ){
+
 		//requerimos la conexion
 		require "conexion.php";
 	
@@ -37,6 +43,11 @@
 
 
 		echo "<br>los datos fueron insertados correctamente";
+
+
+	}
+
+		
 
 	?>
 </body>
